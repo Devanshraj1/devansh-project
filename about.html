@@ -44,54 +44,9 @@
         </div> 
 
     </section>
+   
 
-    <!--section class="our-clients" id="clients">
-        <div class="clients reveal">
-            <div class="container">
-                <div class="clients-head">
-                    <h1>Our Clients</h1>
-                    <div class="client-logo">
-                        <div class="logo1"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </section-->
     
-    <script type="text/javascript">
-
-        //nav bar
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
-
-
-        //client reveal
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                  reveals[i].classList.add("active");
-                } else {
-                  reveals[i].classList.remove("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-    </script>
+    
 </body>
 </html>
