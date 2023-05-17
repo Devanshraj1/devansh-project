@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--link rel="stylesheet" href="style3.css"-->
+    <link rel="stylesheet" href="about.css">
+    
+    <title>Galley Webpage</title>
+</head>
+<body>
+    <!--header>
+        <a href="landing.html" class='logo'> <img src="images.png" alt="Gallery"></a>
+        <div class="menu-btn">
+      
+       
+    </header-->
+
+    <section class="about-home " id="About">
+    
+        <div class="background"><img src="pexels-quintin-gellar-313782.jpg" alt=""></div>
+        <div class="about-container">   
+            <div class="about-head">
+                <h1>About </h1>
+            </div>
+            <div class="about-description">
+                <p><bold>
+                      Hi i am an artist and drawing is my hobby.
+                         So i have created this webpage for 
+                         displaying my art so that everyone can 
+                         view my art and if they are interested
+                         can place a order for a drawing of their
+                         interest. Displaying my art may give them
+                         the idea of my skills or what i can do in
+                         this creative field everything you see here
+                         is for sale and anything you need as a customised
+                         drawing will also be made.
+                    
+                    </bold></p>
+            </div>
+
+        </div> 
+
+    </section>
+
+    <!--section class="our-clients" id="clients">
+        <div class="clients reveal">
+            <div class="container">
+                <div class="clients-head">
+                    <h1>Our Clients</h1>
+                    <div class="client-logo">
+                        <div class="logo1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section-->
+    
+    <script type="text/javascript">
+
+        //nav bar
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+
+        //client reveal
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                  reveals[i].classList.add("active");
+                } else {
+                  reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+</body>
+</html>
